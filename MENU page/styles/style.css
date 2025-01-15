@@ -1,0 +1,49 @@
+
+body{
+    background-color: #474747;
+    color: #B7342E;
+}
+
+h1{
+    font-family: 'Cormorant', serif;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    font-size: 64px;
+}
+span{
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+#content{
+    margin: 138px auto;
+    padding: 60px;
+    box-sizing: border-box;
+    box-shadow: 0px  0px 21px 4px rgba(0, 0, 0, 0.25);
+    background-color: #DEDEDE;
+    width: 595px;
+}
+#text-paragraph p{
+    font-family: 'Cormorant', serif;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+#text-paragraph p:last-child{
+    margin-bottom: 0px;
+}
+
+#end-logo{
+    font-family: 'Cormorant', serif;
+    margin-top: 236px;
+    text-align: center;
+    display: block;
+}
+
+b{
+    font-size: 24px;
+    font-weight: bold;
+}
