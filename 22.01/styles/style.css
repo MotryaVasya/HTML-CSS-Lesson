@@ -1,0 +1,56 @@
+body{
+background-color: #fff;
+}
+header{
+    font-size: 24px;
+    max-width: 1300px;
+    width: 1921px;
+    height: 103px;
+    border-bottom: 0;
+}
+#wrapped{
+    margin: 27px 0 27px 202px;
+    display: flex;
+    justify-content: space-between; /*выравнивание по горизонтали*/
+    align-items: flex-end; /* выравнивание по поперечной оси*/
+}
+#linkes ul{
+    display: flex;
+    letter-spacing: 3px;
+}
+#linkes ul li{
+    margin: 0 20px;
+}
+
+#linkes ul li a{
+    color: #0A0A0A;
+    text-decoration: none;
+    transition: 0.5s linear;
+}
+#linkes ul li a:hover{
+    text-decoration: underline;
+}
+
+#img ul{
+    display: flex;
+}
+#img ul li{
+    margin: 0 20px;
+}
+
+#str{
+    background-color: black;
+    height: 40px;
+    background-position: center;
+}
+#str img{
+    animation: anim 13s linear infinite;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
