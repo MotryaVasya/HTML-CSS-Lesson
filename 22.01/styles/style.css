@@ -1,8 +1,10 @@
 body{
 background-color: #fff;
 max-width: 1920px;
-
-align-items: center;
+height: 3472px;
+}
+body, *{
+    font-family: 'Noto Sans', serif;
 }
 header{
     font-size: 24px;
@@ -24,14 +26,23 @@ header{
 #linkes ul li{
     margin: 0 20px;
 }
+/* #wrapper{
 
+    min-width: 1920px;
+    width: 1920px;
+
+} */
 #linkes ul li a{
     color: #0A0A0A;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
     transition: 0.5s linear;
 }
+#linkes ul li:last-child{
+    margin-right: 914px;
+}
 #linkes ul li a:hover{
-    text-decoration: underline;
+    border-bottom: 2px solid #000;
 }
 #img ul{
     display: flex;
@@ -70,6 +81,62 @@ header{
     margin-right: -480px;
 }
 #second-frame{
-    margin-top: 960px;
     float: left;
+}
+
+
+
+
+#flex-box{
+    flex-direction: row;
+    display: flex;
+    padding-top: 959px;
+}
+#frame-nine{
+    margin-top: 35px;
+    margin-left: 35px;
+    max-width: 728px;
+    min-width: 728px;
+}
+#frame-nine p{
+    font-size: 24px;
+}
+#frame-nine button{
+    font-size: 20px;
+    width: 240px;
+    height: 55px;
+    margin-top: 40px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    transition: 0.5s linear;
+}
+#frame-nine button:hover{
+    background: white;
+    color: black;
+}
+
+#second-flex-box{
+    flex-direction: row-reverse;
+    display: flex;
+    margin-right: 197px;
+}
+#group-eight p{
+    margin-top: 36px;
+    margin-right: 175px;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+#group-eight button{
+    font-size: 20px;
+    background: #000;
+    color: white;
+    width: 240px;
+    height: 55px;
+    transition: 0.5s linear;
+
+}
+#group-eight button:hover{
+    background: white;
+    color: black;
 }
