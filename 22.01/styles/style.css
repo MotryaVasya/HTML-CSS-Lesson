@@ -1,7 +1,6 @@
 body{
 background-color: #fff;
 max-width: 1920px;
-height: 3472px;
 }
 body, *{
     font-family: 'Noto Sans', serif;
@@ -137,6 +136,35 @@ header{
 
 }
 #group-eight button:hover{
+    background: white;
+    color: black;
+}
+
+#third-flex-box{
+    flex-direction: row;
+    display: flex;
+    margin-left: 200px;
+}
+#third-flex-box input{
+    width: 726px;
+    height: 64px;
+    margin-top: 35px;
+    margin-left: 35px;
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+}
+
+#third-flex-box button{
+    font-size: 20px;
+    background: #000;
+    color: white;
+    width: 240px;
+    height: 55px;
+    margin-top: 40px;
+    margin-left: 35px;
+    transition: 0.5s linear;
+}
+#third-flex-box button:hover{
     background: white;
     color: black;
 }
