@@ -1,31 +1,49 @@
 body{
     max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
-}
-#BGimg{
     background-image: url(../images/first.png);
     background-repeat: no-repeat;
+}
+header{
     display: flex;
+    position: sticky;
+    justify-content: space-between;
+    margin-right: 170px;
+    margin-top: 60px;
+    max-height: 25px;
+}
+#main-links{
     flex-direction: row;
+    gap: 60px;
+}
+#main-img {
+    display: flex;
+    justify-content: flex-start;
 }
 
-#header{
-    margin-left: 188px;
-    margin-right: 170px;
-    position: sticky;
-    margin-top: 60px;
-}
-header>nav{
+#main-links>nav{
     display: flex;
-    gap: 73px;  
-    justify-self: end;
+    margin-right: 170px;
+    gap: 73px;
     font-size: 18px;
 }
-header>nav>a{
+#main-links>nav>a{
     color: #fff;
     text-decoration: none;
     transition: 0.5s linear ;
 }
-header>nav>a:hover{
+#main-links>nav>a:hover{
     color: #0D7F8B;
+}
+#CTA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
