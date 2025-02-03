@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="post" id="contact-form">
+        <div id="wrapper">
+
+            <div id="text">
+                <h1>Contact Form</h1>
+                <div>
+                    <p>Please fill your information and we'll be sending your order.</p>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Your name</label>
+                <div id="name">
+                    <input type="text" placeholder="First-name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your email</label>
+                <div id="email">
+                    <input type="email" placeholder="your_mail@mail.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <div id="phone">
+                    <input type="tel" placeholder="123" maxlength="3" required>
+                    <input type="tel" placeholder="456" maxlength="3" required>
+                    <input type="tel" placeholder="7890" maxlength="4" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message-subject">Message subject *</label>
+                <div id="options">
+                    <select>
+                        <option>Other</option>
+                        <option>Numbers</option>
+                        <option>Strings</option>
+                        <option>Symbols</option>
+                        <option>Code</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <div id="message">
+                    <textarea placeholder="Your message here..." required></textarea>
+                </div>
+            </div>
+            <div id="rectangle"></div>
+            <div id="submit-button">
+                <button type="submit">Submit Form</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

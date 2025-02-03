@@ -1,0 +1,76 @@
+body{
+    background-image: url(../images/beach.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    font-size: 30px;
+
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 20vh;
+    box-shadow: 1px 1px 8px 8px black;
+    color: white;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    justify-content: space-between;
+}
+#wrapper{
+    margin-top: 4vh;
+    margin-left: 50px;
+
+}
+#text{
+margin-bottom: 1em;
+
+}
+.form-group>label{
+    margin-right: 30px;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+
+#rectangle{
+    display: flex;
+    height: 2px;
+    width: 80%;
+    justify-self: center;
+    background: rgb(202, 199, 199);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#submit-button{
+    display: flex;
+    justify-content: end;
+}
+button{
+    background: 0;
+    color: white;
+    padding: 6px 10em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+#name{
+    width: 83%;
+}
+#name>input{
+    width: 49%;
+    text-align: center;
+}
+#email>input{
+    width: 1219px;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(255, 255, 255, 0.8);
+    border-color: rgb(255, 255, 255, 0.8);
+    color: black;
+}

@@ -1,0 +1,48 @@
+header{
+    display: flex;
+    flex-direction: row; /*стоит базово*/
+    height: 10vh;
+    border: 1px red solid;
+    min-height: 50px;
+    justify-content: space-evenly; /*выравнивание по основной оси*/
+    align-items: center; /*выравнивание по второстепенной оси*/
+}
+nav{
+    display: flex;
+    gap: 25px; /*растояние между элементами*/
+    /* align-self: flex-start; */
+    width: 600px;
+}
+nav a{
+    background: black;
+    color: #fff;
+    display: block;
+    width: 250px;
+    flex-shrink: 1;
+    /* 
+    600(width) - 25(gap-width) * 2(gap-element) = 550 
+    750 - 550 = 200/3 = 66,7
+    250 - 66,7 = 183,3
+    */
+}
+section {   
+    height: 50vh;
+    border: 1px green solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+section img{
+    height: 40vh;
+    width: 40vw;
+}
+section img:hover{
+    transform: scale(1.5); /* транформация элемента не затрагивая другие элементы*/
+}
+section p{
+    max-width: 500px;
+    /* align-self: start; */
+    transform: translateY(-50px);
+    transform: scale(1);
+}
