@@ -1,5 +1,28 @@
+#board{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 890px;
+    min-width: 890px;
+    gap: 30px;
+    margin: 20px auto;
+}
 .card{
-    width: 35px;
-    height: 60px;
-    background-color: cadetblue;
+    width: calc((100% / 4) - 60px);
+    height: 100px;
+    background-color: rgb(95, 158, 160);
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: 0.5s linear;
+}
+.card:hover{
+    background-color: rgba(95, 158, 160, 0.5);
+}
+.flipped{
+    display: flex;
+    background: lightgreen;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
 }

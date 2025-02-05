@@ -1,4 +1,5 @@
 body{
+    background: #000;
     background-image: url(../images/beach.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -19,18 +20,18 @@ body{
     align-items: center;
     font-size: 30px;
     justify-content: space-between;
+    margin-bottom: 1em;
+    
 }
 #wrapper{
-    margin-top: 4vh;
-    margin-left: 50px;
-
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 #text{
 margin-bottom: 1em;
 
-}
-.form-group>label{
-    margin-right: 30px;
 }
 h1{
     font-size: 50px;
@@ -40,7 +41,7 @@ h1{
 #rectangle{
     display: flex;
     height: 2px;
-    width: 80%;
+    width: 100%;
     justify-self: center;
     background: rgb(202, 199, 199);
     margin-top: 1em;
@@ -58,16 +59,36 @@ button{
     cursor: pointer;
     transition: 0.5s linear;
 }
-#name{
-    width: 83%;
+#name, #email, #phone, #options, #message{
+    width: 80%;
+    height: 4vh;
+}
+#name, #email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #name>input{
-    width: 49%;
+    width: 48%;
     text-align: center;
 }
 #email>input{
-    width: 1219px;
+    width: 100%;
     text-align: center;
+}
+#phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#phone>input{
+    width: 31%;
+    text-align: center;
+}
+#message, #options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 button:hover{
     background-color: rgb(255, 255, 255, 0.8);
