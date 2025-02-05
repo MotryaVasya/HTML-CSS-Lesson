@@ -16,6 +16,7 @@ header{
     display: flex;
     flex-direction: row;
     position: sticky;
+    top: 0px;
     padding: 60px 175px 0px 188px;
     max-height: 25px;
     max-width: 1082px;
@@ -83,4 +84,41 @@ header{
     font-size: 16px;
 
 }
+#about-frame{
+    display: flex;
+    background-color: white;
+    justify-self: center;
+    width: 1260px;
+    height: 655px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+}
+#text-frame{
+    font-size: 35px;
+    margin-top: 93px;
+    margin-left: 100px;
+}
+#grid-farme{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 40px;
+    margin-top: 128px;
+    margin-bottom: 30px;
+    margin-left: 98px;
+    margin-right: 98px;
+}
+.top-elements-in-grid>h2{
+    margin-top: 35px;
+}
+.center-element-in-grid{
+    margin-top: 35px;
+}
+.bottom-elemenst-in-grid{
+    margin-top: 35px;
+    color: #08616A;
+    transition: 0.5s linear;
+}
 
+.bottom-elemenst-in-grid:hover{
+    transform: translateX(50px);
+}
