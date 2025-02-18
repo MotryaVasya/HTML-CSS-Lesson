@@ -1,0 +1,93 @@
+
+body{
+    background-color: #E8B180;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
+#wrapper{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1240px;
+    gap: 5vh;
+}
+#wrapper div:last-child{
+    align-self: start;
+}
+#grid{
+    display: flex;
+    gap: 162px;
+}
+#grid-left{
+    max-width: 669px;
+}
+#grid-left h1, p, button {
+    margin-bottom: 60px;
+}
+#grid-right{
+    display: flex;
+    flex-direction: column;
+}
+#grid-right>span    {
+    display: flex;
+    align-self: end;
+    transition: 0.5s linear;
+}
+#grid-right>span:hover{
+    color: #453168;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 96px;
+    color: #453168;
+    font-weight: bold;
+}
+button{
+    color: white;
+    background: #453168;
+    width: 325px;
+    height: 75px;
+    border-radius: 18px;
+    transition: 0.5s linear; 
+
+}
+button:hover{
+    background: white;
+    color: #453168;
+}
+#products{
+    display: flex;
+    justify-self: center;
+    gap: 63px;
+    animation: anim 5s linear;    
+}
+
+#products img{
+    transition: 0.5s linear; 
+}
+#products img:hover{
+    transform: scale(1.5);
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    25%{
+        opacity: 1;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    } 
+}
+
