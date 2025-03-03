@@ -1,0 +1,14 @@
+.error{
+    color: red;
+    text-decoration: underline;
+}
+
+.correct{
+    color: green;
+}
+#input{
+    width: 100%;
+}
+#container{
+    font-size: 20px;
+}

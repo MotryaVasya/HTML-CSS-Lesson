@@ -8,7 +8,7 @@ let number = 0;
 let buttons = document.getElementById('buttons');
 for (var i = 0; i < 10; i++) {
     buttons.innerHTML += `
-        <button>${i+1}</button>
+    <button>${i+1}</button>
     `;
     if (Math.random().toFixed() == 0){
         number = i;
@@ -24,9 +24,10 @@ for (var i = 0; i < 10; i++) {
 }
 main.innerHTML += 
 `
-    <span>Coins</span>
-    <span id="coins">0</span>
+<span>Coins</span>
+<span id="coins">0</span>
 `;
+document.getElementById('coins').textContent = localStorage.getItem('game1');
 Array.from(document.getElementsByTagName('button')).forEach((btn)=>{
     btn.addEventListener('click', function(){
         if(btn.textContent == number){
@@ -38,9 +39,9 @@ Array.from(document.getElementsByTagName('button')).forEach((btn)=>{
             document.getElementById('coins').textContent = parseInt(document.getElementById('coins').textContent) - 1
             Random();
         }
+        localStorage.setItem('game1', document.getElementById('coins').textContent);
     });
-});
-
+})
 function Random(){
     for (var i = 1; i <= 10; i++) {
         if (Math.random().toFixed() == 0){
