@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="style.css">    
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="container-order">
+        <form id="order"></form>
+    </div>
+    <div id="container">
+        <div id="cards">
+            <div class="card">
+                <img src="https://cdn.litres.ru/pub/c/cover_415/4368065.webp" alt="cover1">
+                <h2>Сто лет одиночества</h2>
+                <p>Габриэль Гарсиа Маркес</p>
+                <p>10$</p>
+                <button onclick="Select('Сто лет одиночества')">Select</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn.litres.ru/pub/c/cover_415/129525.webp" alt="cover2">
+                <h2>Поющие в терновнике</h2>
+                <p>Колин Маккалоу</p>
+                <p>8$</p>
+                <button onclick="Select('Поющие в терновнике')">Select</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn.litres.ru/pub/c/cover_415/39507162.webp" alt="cover3">
+                <h2>451 градус по Фаренгейту</h2>
+                <p>Рэй Брэдбери</p>
+                <p>15$</p>
+                <button onclick="Select('451 градус по Фаренгейту')">Select</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn.litres.ru/pub/c/cover_415/4368065.webp" alt="cover1">
+                <h2>Сто лет одиночества</h2>
+                <p>Габриэль Гарсиа Маркес</p>
+                <p>10$</p>
+                <button onclick="Select('Сто лет одиночества')">Select</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn.litres.ru/pub/c/cover_415/129525.webp" alt="cover2">
+                <h2>Поющие в терновнике</h2>
+                <p>Колин Маккалоу</p>
+                <p>8$</p>
+                <button onclick="Select('Поющие в терновнике')">Select</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn.litres.ru/pub/c/cover_415/39507162.webp" alt="cover3">
+                <h2>451 градус по Фаренгейту</h2>
+                <p>Рэй Брэдбери</p>
+                <p>15$</p>
+                <button onclick="Select('451 градус по Фаренгейту')">Select</button>
+            </div>
+        </div>
+        <div id="buy">
+            <input type="text" placeholder="Book" id="book">
+            <input type="text" placeholder="Quantity" id="quantity">
+            <input type="text" placeholder="Name" id="name">
+            <input type="text" placeholder="Address" id="address">
+            <input type="text" placeholder="Date" id="date">
+            <input type="text" placeholder="Comment" id="comment">
+
+            <button id="buy" onclick="Buy()">Buy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

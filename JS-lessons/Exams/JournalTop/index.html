@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="form">
+            <div id="form-select-lesson">
+                <div id="select-group">
+                    <label for="group">Group: </label>
+                    <select id="group">
+                        <option>Select Group</option>
+                        <option value="9/3-РПО-2022/1-54">9/3-РПО-2022/1-54</option>
+                        <option value="11/1-РПО-2024/1-54">11/1-РПО-2024/1-54</option>
+                    </select>
+                </div>
+                <div id="select-lesson">
+                    <label for="lesson">Lesson: </label>
+                    <select id="lesson">
+                        <option>Select lesson</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <button id="select">Select</button>
+            </div>
+
+            <div id="wrap">
+                __________________________________________________________
+            </div>
+            
+            <div id="form-select-presented-students">
+                <div id="Topic">
+                    <label for="topic">Topic: </label>
+                    <input type="text" class="topic" placeholder="Topic">
+                    <span class="topic" style="display: none;"></span>
+                </div>
+                <div id="exemple-row">
+                    <span>Name</span>
+                    <span>Is present</span>
+                </div>
+                <div id="wrap-students">
+                    __________________________________________________________
+                </div>
+                <div id="students">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

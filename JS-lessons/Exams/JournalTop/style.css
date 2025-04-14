@@ -1,0 +1,58 @@
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #88921a80;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+    max-height: 100vh;
+
+}
+#wrap{
+    display: flex;
+    font-size: 30px
+}
+#form-select-lesson{
+    display: flex;
+    gap: 50px;
+}
+
+
+#form-select-presented-students{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#exemple-row{
+    display: flex;
+    gap: 300px;
+}
+#wrap-students{
+    display: flex;
+    font-size: 20px;
+}
+#students{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#result{
+    display: none;
+}
+.student{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+#Topic{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
